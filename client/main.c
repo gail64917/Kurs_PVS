@@ -1,10 +1,12 @@
 #include <stdio.h>
-#include "misc.h"
+#include "structures.h"
+#include "dictionary.h"
+#include "controller.h"
+#include "worker.h"
  
 int main()
 {
 	printf("Hello, World.\n");
-	myFunc();
 	fflush(stdout);
  	
 	//СОЗДАЕМ ПУЛ ВОРКЕРОВ
