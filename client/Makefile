@@ -1,2 +1,8 @@
+CC=gcc  #compiler
+TARGET=main #target file name
+ 
 all:
-	gcc main.c misc.c -o main
+	$(CC) main.c misc.c -o $(TARGET)
+ 
+clean:
+	rm $(TARGET)
