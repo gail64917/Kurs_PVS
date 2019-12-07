@@ -26,4 +26,8 @@ struct worker_pool *GetWorkerPool();
 int DelegateTaskToWorker(int workerIndex, struct worker_task *task);
 int MostFreeWorker();
 
+
+
+int createWorker(int index);
+
 #endif // CONTROLLER_H
