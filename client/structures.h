@@ -15,6 +15,8 @@
 #include <pthread.h>
 #include <semaphore.h>
 
+#define BUFFER 4096
+
 struct FileDescSet
 {
     fd_set set;
@@ -34,7 +36,7 @@ struct FileDesc
     int id;
     char *domain;
     char *mx_record;
-    struct sockaddr_in addr;
+    struct sockaddr_in *addr;
     int current_state;
     int prev_state;
     int attempt;
@@ -50,7 +52,7 @@ struct FileDescList
 
 struct domain_record
 {
-    char* domain;
+    char *domain;
     int workerId;
     struct domain_record *next;
 };

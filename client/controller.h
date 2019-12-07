@@ -9,7 +9,7 @@
 #include <unistd.h>
 #include <pthread.h>
 #include <signal.h>
-#include "structs.h"
+#include "structures.h"
 #include "worker.h"
 #include "dictionary.h"
 

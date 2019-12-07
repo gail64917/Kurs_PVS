@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <semaphore.h>
-#include "structs.h"
+#include "structures.h"
 
 int InitDictionary();
 void RemoveDomainRecordFromDictionary(char *domain);

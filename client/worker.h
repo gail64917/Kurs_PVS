@@ -6,7 +6,7 @@
 #include <err.h>
 #include <errno.h>
 #include <unistd.h>
-#include "structs.h"
+#include "structures.h"
 #include "controller.h"
 
 void InitWorker(void *my_info);
